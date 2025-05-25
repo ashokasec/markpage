@@ -119,4 +119,82 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  textarea {
+    @apply p-4;
+  }
+
+  h1 {
+    @apply text-3xl font-bold mb-4;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold mt-6 mb-3;
+  }
+
+  h3 {
+    @apply text-xl font-semibold mt-4 mb-2;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed text-gray-800;
+  }
+
+  a {
+    @apply text-blue-600 underline hover:text-blue-800 transition-colors;
+  }
+
+  ul,
+  ol {
+    @apply pl-6 mb-4;
+  }
+
+  li {
+    @apply mb-1 list-disc;
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic text-gray-600 mb-4;
+  }
+
+  code {
+    @apply bg-gray-100 text-sm px-1 py-0.5 rounded font-mono;
+  }
+
+  pre {
+    @apply bg-black text-white p-4 rounded overflow-x-auto text-sm mb-4;
+  }
+
+  img {
+    @apply max-w-full h-auto rounded-lg;
+  }
+
+  hr {
+    @apply border-t my-6 border-gray-200;
+  }
+
+  table {
+    @apply w-full border-collapse my-4;
+  }
+
+  th,
+  td {
+    @apply border px-4 py-2 text-left;
+  }
+
+  thead {
+    @apply bg-gray-100 font-semibold;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For IE and Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and Edge */
 }
